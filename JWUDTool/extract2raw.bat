@@ -12,4 +12,7 @@ ECHO CommonKey is set as %CommonKey% ... If this does not start with D7B and end
 ECHO read the instructions again
 PAUSE
 
-for /F "tokens=*" %%A in (keys.txt) do java -jar "%~dp0JWUDTool.jar" -commonkey %CommonKey% -titleKey %%A -decrypt -in "%~dpnx1" -out "%~dp0%~n1 raw"
+
+for /F "usebackq tokens=*" %%A in ("%~dp0keys.txt") do (
+java -jar "%~dp0JWUDTool.jar" -commonkey %CommonKey% -titleKey %%A -decrypt -in "%~dpnx1" -out "%~dp0%~n1 raw"
+)
