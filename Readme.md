@@ -6,11 +6,11 @@ These are *not* optimised in any way, I will probably *not* spend time to optimi
 
 This is a minimum viable product.... as in "It Works..... Eventually"
 
-## Config
+## STEP 1 -- Config
 
 Open the `Config` file in a text editor
 
-- `CommonKey` = WiiU Common Key... Starts with D7 and ends with something
+- `CommonKey` = WiiU Common Key... Starts with d7b and ends with 656
 
 ## Jnuslibdecryptor
 
